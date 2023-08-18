@@ -454,14 +454,14 @@ a.menu:hover {
 .dropdown:hover .dropbtn {background-color: var(--pink);}
 
 .img-1-ortho {
-    background: url(../images/EECP_page.jpg);
+    background: url(../images/Rehab_1_Long.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .img-2-ortho {
-    background: url(../images/eecp_slide2.jpg);
+    background: url(../images/doctor-examining-mans-knee.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
