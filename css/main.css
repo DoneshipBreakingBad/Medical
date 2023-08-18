@@ -396,12 +396,7 @@ footer a:hover {
     width: 100%;
     height: 90px;
     background-color: #D0DAEE;
-}
-.footer-text-left {
-  font-size:25px;
-  padding-left:100px;
-  float:center;
-  word-spacing:20px;
+    text-align: center;
 }
 
 a.menu:hover {
