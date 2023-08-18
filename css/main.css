@@ -397,3 +397,14 @@ footer a:hover {
     height: 90px;
     background-color: #D0DAEE;
 }
+.footer-text-left {
+  font-size:25px;
+  padding-left:40px;
+  float:left;
+  word-spacing:20px;
+}
+
+a.menu:hover {
+  background-color:yellow;
+  font-size:20px;
+}
