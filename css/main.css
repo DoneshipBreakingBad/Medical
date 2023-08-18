@@ -452,3 +452,17 @@ a.menu:hover {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: var(--pink);}
+
+.img-1-ortho {
+    background: url(../images/EECP_page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-2-ortho {
+    background: url(../images/eecp_slide2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
