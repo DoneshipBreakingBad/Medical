@@ -448,10 +448,10 @@ a.menu:hover {
 .dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block; background-color: var(--pink);}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: var(--pink);}
+.dropdown:hover .dropbtn {background-color: #FFFFFF;}
 
 .img-1-ortho {
     background: url(../images/Rehab_1_Long.jpg);
