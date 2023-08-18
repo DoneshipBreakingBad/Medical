@@ -399,7 +399,32 @@ footer a:hover {
     text-align: center;
 }
 
+.footer-text-left {
+  font-size:25px;
+  padding-left:100px;
+  float:center;
+  word-spacing:20px;
+  margin-top: 20px;
+}
+
 a.menu:hover {
   background-color:none;
   font-size:20px;
+}
+
+.footer-content-center {
+  padding-center:40px;
+  margin-top:20px;
+  float:right;
+}
+
+.icon-style {
+  height:40px;
+  margin-left:20px;
+  margin-top:5px;
+}
+
+.icon-style:hover {
+  background-color:none;
+  padding:5px;
 }
