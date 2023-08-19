@@ -102,14 +102,14 @@
 
     <!-- Form -->
     <section class="form-sec">
-        <form method="post" action="mailto:umangtarang.ut@gmail.com" enctype="text/plain" class="d-flex flex-column justify-content-center align-items-center">
+        <form method="post" name="bookAppointment" class="d-flex flex-column justify-content-center align-items-center">
             <h2>Book an Appointment</h2>
             <h2>Get the Best Medical Consultation</h2>
             <label for="fname" class="m-2">Name</label>
-            <input id="fname" placeholder="First" class="m-2" name="fname" required />
-            <input placeholder="Last" class="m-2" name="lname" required />
+            <input id="fname" placeholder="First" class="m-2" type="text" name="fname" required />
+            <input placeholder="Last" class="m-2" type="text" name="lname" required />
             <label for="contact" class="m-2">Contact Number</label>
-            <input id="contact" class="m-2" placeholder="Contact Number" type="number" name="contact" required />
+            <input id="contact" class="m-2" placeholder="Contact Number" type="tel" name="contact" required />
             <label for="email" class="m-2">Email</label>
             <input id="email" class="m-2" placeholder="Email" type="email" name="email" required />
             <label for="consult" class="m-2">Consultation Type</label>
