@@ -390,7 +390,7 @@ footer a:hover {
 
 /* Footer */
 .footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 850px;
