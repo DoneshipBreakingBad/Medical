@@ -398,14 +398,14 @@ footer a:hover {
     height: 50px;
     float: left;
     background-color: #FFFFE0;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-text-left {
   font-size:25px;
-  padding-left:50px;
+  padding-left:100px;
   float:left;
-  word-spacing:10px;
+  word-spacing:200px;
   margin-top: 7px;
 }
 
