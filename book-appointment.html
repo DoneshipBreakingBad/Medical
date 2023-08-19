@@ -131,9 +131,26 @@
                 <option value="Bihar">Bihar</option>
                 <option value="Chattisgarh">Chattisgarh</option>
             </select>
-            <button type="submit" class="m-4" name="submit">Book Appointment</button>
+            <button type="button" class="m-4" name="submit" onclick="Send()">Book Appointment</button>
         </form>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function Send(){
+            console.log("function call");
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "theksbrosofficial@gmail.com",
+                Password : "E3417F687C3C4345A55E7B1AC54E5367FAEF",
+                To : 'umangtarang.ut@gmail.com',
+                From : "theksbrosofficial@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+        }
+    </script>
     <!-- footer -->
     <footer class="bg-dark py-5">
         <div class="container">
