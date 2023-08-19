@@ -102,7 +102,7 @@
 
     <!-- Form -->
     <section class="form-sec">
-        <form method="post" action="mailto:saaolheartclinic@gmail.com" class="d-flex flex-column justify-content-center align-items-center">
+        <form method="post" action="mailto:saaolheartclinic@gmail.com" onsubmit="sendEmail(); reset(); return false;" class="d-flex flex-column justify-content-center align-items-center">
             <h2>Book an Appointment</h2>
             <h2>Get the Best Medical Consultation</h2>
             <label for="fname" class="m-2">Name</label>
@@ -134,6 +134,22 @@
             <button type="submit" class="m-4">Book Appointment</button>
         </form>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "username",
+                Password : "password",
+                To : 'umangtarang.ut@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Appointment",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+        }
+    </script>
     <!-- footer -->
     <footer class="bg-dark py-5">
         <div class="container">
