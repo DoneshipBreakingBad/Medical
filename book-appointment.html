@@ -107,7 +107,7 @@
             <h2>Get the Best Medical Consultation</h2>
             <label for="fname" class="m-2">Name</label>
             <input id="fname" placeholder="First" class="m-2" type="text" name="fname" required />
-            <input placeholder="Last" class="m-2" type="text" name="lname" required />
+            <input id="lname" placeholder="Last" class="m-2" type="text" name="lname" required />
             <label for="contact" class="m-2">Contact Number</label>
             <input id="contact" class="m-2" placeholder="Contact Number" type="tel" name="contact" required />
             <label for="email" class="m-2">Email</label>
@@ -137,15 +137,22 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function Send(){
-            console.log("function call");
+            var fn=document.getElementById("fname").value;
+            var ln=document.getElementById("lname").value;
+            var c=document.getElementById("contact").value;
+            var e=document.getElementById("email").value;
+            var co=document.getElementById("consult").value;
+            var cou=document.getElementById("country").value;
+            var s=document.getElementById("states").value;
+            var body="First Name: "+fn+"<br> Last Name: "+ln+"<br> Contact Number: "+c+"<br> Email: "+e+"<br> Consultation Type: "+co+"<br> Country: "+cou+"<br> State: "+s;
             Email.send({
                 Host : "smtp.elasticemail.com",
                 Username : "theksbrosofficial@gmail.com",
                 Password : "E3417F687C3C4345A55E7B1AC54E5367FAEF",
                 To : 'umangtarang.ut@gmail.com',
                 From : "theksbrosofficial@gmail.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
+                Subject : "New Appointment",
+                Body : body
             }).then(
               message => alert(message)
             );
