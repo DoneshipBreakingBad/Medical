@@ -407,7 +407,7 @@ footer a:hover {
   padding-left:100px;
   float:center;
   word-spacing:200px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 a.menu:hover {
@@ -427,8 +427,8 @@ a.menu:hover {
      word-spacing: 15px;
      padding-left: 30px;
      float: left;
-     margin-top: 8px;
-     font-size: 25px;
+     margin-top: 10px;
+     font-size: 15px;
   }
 }
 
