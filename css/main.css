@@ -404,7 +404,7 @@ footer a:hover {
 .footer-text-left {
   font-size:25px;
   padding-left:100px;
-  float:left;
+  float:center;
   word-spacing:200px;
   margin-top: 7px;
 }
@@ -424,6 +424,7 @@ a.menu:hover {
   .footer-text-left {
      word-spacing: 10px;
      padding-left: 50px;
+     float: left;
   }
 }
 
