@@ -382,9 +382,11 @@ footer a:hover {
 }
 
 /* media queries */
-@media(min-width: 992px) {
+@media screen and (max-width: 992px) {
     .nav-item {
         border-bottom: none;
+        float: left;
+        padding-left: 50px;
     }
 }
 
