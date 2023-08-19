@@ -412,7 +412,7 @@ footer a:hover {
 
 a.menu:hover {
   background-color:none;
-  font-size:35px;
+  font-size:25px;
 }
 
 @media screen and (max-width: 992px) {
@@ -428,7 +428,7 @@ a.menu:hover {
      padding-left: 30px;
      float: left;
      margin-top: 10px;
-     font-size: 15px;
+     font-size: 20px;
   }
 }
 
