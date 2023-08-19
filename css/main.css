@@ -414,6 +414,19 @@ a.menu:hover {
   font-size:35px;
 }
 
+@media screen and (max-width: 300px) {
+  .footer {
+     text-align: left;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .footer-text-left {
+     word-spacing: 10px;
+     padding-left: 50px;
+  }
+}
+
 .dropbtn {
   background-color: #FFFFFF;
   color: black;
