@@ -403,9 +403,9 @@ footer a:hover {
 
 .footer-text-left {
   font-size:25px;
-  padding-left:100px;
+  padding-left:50px;
   float:left;
-  word-spacing:50px;
+  word-spacing:10px;
   margin-top: 7px;
 }
 
