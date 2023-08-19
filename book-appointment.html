@@ -135,6 +135,7 @@
         </form>
     </section>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         function Send(){
             var fn=document.getElementById("fname").value;
@@ -154,7 +155,9 @@
                 Subject : "New Appointment",
                 Body : body
             }).then(
-              message => alert(message)
+              message =>{
+                  if(message=='OK'){
+                      swal("Successful", "Your appointment has been booked sucessfully!", "success");
             );
         }
     </script>
