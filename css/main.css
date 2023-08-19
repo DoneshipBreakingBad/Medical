@@ -424,7 +424,7 @@ a.menu:hover {
 @media screen and (max-width: 992px) {
   .footer-text-left {
      word-spacing: 15px;
-     padding-left: 20px;
+     padding-left: 25px;
      float: left;
      font-size: 10px;
      margin-top: 10px;
