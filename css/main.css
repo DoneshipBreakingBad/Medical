@@ -73,7 +73,7 @@ body {
 
 .navbar-brand img {
     width: 67px;
-    margin: 85px 0px 0px 50px;
+    margin: 85px 0px 0px 6px;
 }
 
 .navbar-brand span {
@@ -88,6 +88,7 @@ body {
 
 .nav-item {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+    margin: 85px 0px 0px 0px;
 }
 
 /* header */
