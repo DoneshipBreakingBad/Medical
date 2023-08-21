@@ -126,10 +126,16 @@ body {
 }
 
 .awards-item {
-    width: min(100%, 250px);
-    height: 250px;
+    width: 300px;
+    height: auto;
     padding: 20px !important;
     margin: 20px;
+    box-shadow: 0 0 2px 0 grey;
+}
+
+.awards-item:hover {
+    border: none;
+    transform: scale(1.01);
 }
 
 .awards>.awards-item>i {
