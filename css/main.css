@@ -72,13 +72,24 @@ body {
 
 .navbar-brand img {
     width: 67px;
-    margin: 85px 0px 0px 6px;
+    margin: 0px 0px 0px 6px;
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-brand img {
+        margin: 85px 0px 0px 6px;
+    }
 }
 
 .navbar-brand span {
     letter-spacing: 2px;
     font-family: var(--lg-font);
-    margin: 85px 0px 0px 0px;
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-brand span {
+        margin: 85px 0px 0px 0px;
+    }
 }
 
 .nav-link:hover {
