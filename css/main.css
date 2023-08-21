@@ -399,8 +399,8 @@ footer a:hover {
     background-color: #00AFEF;
     border-radius: 20px;
     padding: 10px 0;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 @media screen and (max-width: 450px) {
