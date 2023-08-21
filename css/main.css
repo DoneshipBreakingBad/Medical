@@ -62,8 +62,7 @@ body {
     .contact {
         position: absolute;
         height: 60px !important;
-        padding-left: 200px;
-        margin: 0 5px;
+        margin: 0 10px;
     }
 }
 
