@@ -437,3 +437,17 @@ footer a:hover {
 .eecp-link:hover {
     color: black;
 }
+
+.img-1-heart {
+    background: url(../images/human-heart-design-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-2-heart {
+    background: url(../images/medium-shot-man-with-chest-pain-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
