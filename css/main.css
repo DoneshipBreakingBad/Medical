@@ -52,12 +52,6 @@ body {
     margin: 0px 0px 0px 6px;
 }
 
-@media screen and (max-width: 450px) {
-    .navbar-brand img {
-        margin: 85px 0px 0px 6px;
-    }
-}
-
 .navbar-brand span {
     letter-spacing: 2px;
     font-family: var(--lg-font);
