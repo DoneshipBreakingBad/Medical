@@ -402,3 +402,38 @@ footer a:hover {
         padding-right: 5px;
     }
 }
+
+.eecp-details {
+    width: 100%;
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.eecp-details-item {
+    padding: 0 20px;
+    width: max(160px, 15%);
+}
+
+.eecp-details-text {
+    font-size: 14px;
+}
+
+.eecp-details-text p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.checked {
+    color: orange;
+}
+
+.eecp-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.eecp-link:hover {
+    color: black;
+}
