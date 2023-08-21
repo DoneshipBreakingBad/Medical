@@ -473,17 +473,3 @@ footer a:hover {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #FFFFFF; color: var(--pink);}
-
-.img-1-ortho {
-    background: url(../images/Rehab_1_Long.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.img-2-ortho {
-    background: url(../images/doctor-examining-mans-knee.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
