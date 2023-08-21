@@ -55,14 +55,15 @@ body {
 }
 
 .contact p i {
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 @media screen and (max-width: 450px) {
     .contact {
         position: absolute;
         height: 60px !important;
-        padding-left: 1000px;
+        padding-left: 100px;
+        margin: 0 10px;
     }
 }
 
