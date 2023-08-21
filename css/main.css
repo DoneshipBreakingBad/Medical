@@ -57,12 +57,6 @@ body {
     font-family: var(--lg-font);
 }
 
-@media screen and (max-width: 450px) {
-    .navbar-brand span {
-        margin: 85px 0px 0px 0px;
-    }
-}
-
 .nav-link:hover {
     color: var(--pink) !important;
 }
