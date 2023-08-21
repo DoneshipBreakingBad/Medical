@@ -45,6 +45,7 @@ body {
 .navbar {
     -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    margin: 85px 0px 0px 0px;
 }
 
 .contact {
@@ -62,7 +63,7 @@ body {
     .contact {
         position: absolute;
         height: 60px !important;
-        padding-left: 100px;
+        padding-left: 150px;
         margin: 0 5px;
     }
 }
