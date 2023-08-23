@@ -65,9 +65,8 @@
     <!-- end of navbar -->
 
     <!-- Form -->
-    <script>
-        function Send(){
-            var fn=document.getElementById("fname").value;
+    <section class="form-sec">
+        <form method="POST" name="bookAppointment" class="d-flex flex-column justify-content-center align-items-center" onsubmit="var fn=document.getElementById("fname").value;
             var ln=document.getElementById("lname").value;
             var c=document.getElementById("contact").value;
             var e=document.getElementById("email").value;
@@ -89,11 +88,7 @@
                       swal("Successful", "Your appointment has been booked successfully!", "success");
                   }
               }
-            );
-        }
-    </script>
-    <section class="form-sec">
-        <form method="POST" name="bookAppointment" class="d-flex flex-column justify-content-center align-items-center" onsubmit="Send()">
+            );">
             <h2>Book an Appointment</h2>
             <h2>Get the Best Medical Consultation</h2>
             <label for="fname" class="m-2">Name</label>
