@@ -133,36 +133,43 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
-        function Send(){
-            var fn=document.getElementById("fname").value;
-            var ln=document.getElementById("lname").value;
-            var c=document.getElementById("contact").value;
-            var e=document.getElementById("email").value;
-            var co=document.getElementById("consult").value;
-            var cou=document.getElementById("country").value;
-            var s=document.getElementById("states").value;
-            if (fn === "" || ln === "" || c === "" || e === "" || co === "" || cou === "" || s === "") {
-                swal("Error", "Please fill in all required fields.", "error");
-                return false; // Prevent form submission
-            }
-            var body="First Name: "+fn+"<br> Last Name: "+ln+"<br> Contact Number: "+c+"<br> Email: "+e+"<br> Consultation Type: "+co+"<br> Country: "+cou+"<br> State: "+s;
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "theksbrosofficial@gmail.com",
-                Password : "E3417F687C3C4345A55E7B1AC54E5367FAEF",
-                To : 'umangtarang.ut@gmail.com',
-                From : 'theksbrosofficial@gmail.com',
-                Subject : "New Appointment",
-                Body : body
-            }).then(
-              message =>{
-                  if(message=="OK"){
-                      swal("Successful", "Your appointment has been booked successfully!", "success");
-                      return true;
-                  }
-              }
-            );
+        function Send() {
+        var fn = document.getElementById("fname").value;
+        var ln = document.getElementById("lname").value;
+        var c = document.getElementById("contact").value;
+        var e = document.getElementById("email").value;
+        var co = document.getElementById("consult").value;
+        var cou = document.getElementById("country").value;
+        var s = document.getElementById("states").value;
+    
+        if (fn === "" || ln === "" || c === "" || e === "" || co === "" || cou === "" || s === "") {
+            swal("Error", "Please fill in all required fields.", "error");
+            return false; // Prevent form submission
         }
+    
+        var body = "First Name: " + fn + "<br> Last Name: " + ln + "<br> Contact Number: " + c + "<br> Email: " + e + "<br> Consultation Type: " + co + "<br> Country: " + cou + "<br> State: " + s;
+        
+        return new Promise((resolve, reject) => {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "theksbrosofficial@gmail.com",
+                Password: "E3417F687C3C4345A55E7B1AC54E5367FAEF",
+                To: 'umangtarang.ut@gmail.com',
+                From: 'theksbrosofficial@gmail.com',
+                Subject: "New Appointment",
+                Body: body
+            }).then(
+                message => {
+                    if (message === "OK") {
+                        swal("Successful", "Your appointment has been booked successfully!", "success");
+                        resolve(true);
+                    } else {
+                        reject("Failed to send email.");
+                    }
+                }
+            );
+        });
+    }
     </script>
     <div class="eecp-details d-flex justify-content-center flex-wrap">
         <div class="eecp-details-item d-flex align-items-center">
