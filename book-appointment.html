@@ -65,6 +65,33 @@
     <!-- end of navbar -->
 
     <!-- Form -->
+    <script>
+        function Send(){
+            var fn=document.getElementById("fname").value;
+            var ln=document.getElementById("lname").value;
+            var c=document.getElementById("contact").value;
+            var e=document.getElementById("email").value;
+            var co=document.getElementById("consult").value;
+            var cou=document.getElementById("country").value;
+            var s=document.getElementById("states").value;
+            var body="First Name: "+fn+"<br> Last Name: "+ln+"<br> Contact Number: "+c+"<br> Email: "+e+"<br> Consultation Type: "+co+"<br> Country: "+cou+"<br> State: "+s;
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "theksbrosofficial@gmail.com",
+                Password : "E3417F687C3C4345A55E7B1AC54E5367FAEF",
+                To : 'umangtarang.ut@gmail.com',
+                From : 'theksbrosofficial@gmail.com',
+                Subject : "New Appointment",
+                Body : body
+            }).then(
+              message =>{
+                  if(message=="OK"){
+                      swal("Successful", "Your appointment has been booked successfully!", "success");
+                  }
+              }
+            );
+        }
+    </script>
     <section class="form-sec">
         <form method="POST" name="bookAppointment" class="d-flex flex-column justify-content-center align-items-center" onsubmit="Send()">
             <h2>Book an Appointment</h2>
@@ -97,33 +124,6 @@
             </select>
             <button type="submit" class="m-4" name="submit">Book Appointment</button>
         </form>
-        <script>
-            function Send(){
-                var fn=document.getElementById("fname").value;
-                var ln=document.getElementById("lname").value;
-                var c=document.getElementById("contact").value;
-                var e=document.getElementById("email").value;
-                var co=document.getElementById("consult").value;
-                var cou=document.getElementById("country").value;
-                var s=document.getElementById("states").value;
-                var body="First Name: "+fn+"<br> Last Name: "+ln+"<br> Contact Number: "+c+"<br> Email: "+e+"<br> Consultation Type: "+co+"<br> Country: "+cou+"<br> State: "+s;
-                Email.send({
-                    Host : "smtp.elasticemail.com",
-                    Username : "theksbrosofficial@gmail.com",
-                    Password : "E3417F687C3C4345A55E7B1AC54E5367FAEF",
-                    To : 'umangtarang.ut@gmail.com',
-                    From : 'theksbrosofficial@gmail.com',
-                    Subject : "New Appointment",
-                    Body : body
-                }).then(
-                  message =>{
-                      if(message=="OK"){
-                          swal("Successful", "Your appointment has been booked successfully!", "success");
-                      }
-                  }
-                );
-            }
-        </script>
     </section>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
