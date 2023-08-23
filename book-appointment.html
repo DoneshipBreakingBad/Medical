@@ -143,6 +143,7 @@
             var s=document.getElementById("states").value;
             if (fn === "" || ln === "" || c === "" || e === "" || co === "" || cou === "" || s === "") {
                 swal("Error", "Please fill in all required fields.", "error");
+                return false;
             }
             var body="First Name: "+fn+"<br> Last Name: "+ln+"<br> Contact Number: "+c+"<br> Email: "+e+"<br> Consultation Type: "+co+"<br> Country: "+cou+"<br> State: "+s;
             Email.send({
