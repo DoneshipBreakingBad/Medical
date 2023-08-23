@@ -66,7 +66,7 @@
 
     <!-- Form -->
     <section class="form-sec">
-        <form method="POST" name="bookAppointment" class="d-flex flex-column justify-content-center align-items-center" onsubmit="Send()">
+        <form method="POST" name="bookAppointment" class="d-flex flex-column justify-content-center align-items-center" onsubmit="return Send();">
             <h2>Book an Appointment</h2>
             <h2>Get the Best Medical Consultation</h2>
             <label for="fname" class="m-2">Name</label>
@@ -141,6 +141,10 @@
             var co=document.getElementById("consult").value;
             var cou=document.getElementById("country").value;
             var s=document.getElementById("states").value;
+            if (fn === "" || ln === "" || c === "" || e === "" || co === "" || cou === "" || s === "") {
+                swal("Error", "Please fill in all required fields.", "error");
+                return false; // Prevent form submission
+            }
             var body="First Name: "+fn+"<br> Last Name: "+ln+"<br> Contact Number: "+c+"<br> Email: "+e+"<br> Consultation Type: "+co+"<br> Country: "+cou+"<br> State: "+s;
             Email.send({
                 Host : "smtp.elasticemail.com",
@@ -157,6 +161,7 @@
                   }
               }
             );
+            return true; // Allow form submission
         }
     </script>
     <div class="eecp-details d-flex justify-content-center flex-wrap">
